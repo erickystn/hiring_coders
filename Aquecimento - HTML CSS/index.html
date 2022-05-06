@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8a034c4b7.js" crossorigin="anonymous"></script>
+    <title>Ericky Sant'ana</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div>
+            <h2>Ericky Sant'ana</h2>
+        </div>
+
+        <ul>
+            <li> <a target="_blank" href="http://github.com/erickystn"> GitHub</a> </li>
+            <li> <a target="_blank" href="http://wa.me/5521992101724">Whatsapp</a> </li>
+            <li> <a target="_blank" href="mailto:xkyx@live.com">Email</a> </li>
+        </ul>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <div class="name">
+            <h1> Ericky Sant'ana</h1>
+            <br />
+            <h3>Futuro Desenvolvedor Full Stack</h3>
+        </div>
+
+
+
+
+        <div onclick="displayAbout()" id="arrow">
+            <i id="animation" class="fa-solid fa-angles-down"></i>
+        </div>
+
+
+        <div style="display: none;" class="about" id="about">
+            <div class="descricao">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit debitis illum, eos soluta vel quam hic
+                    enim minima magnam officiis nostrum fugit porro natus eveniet voluptatibus adipisci error
+                    consequuntur.
+                    Modi.
+                </p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h5>Deixe seu Contato =) </h5>
+            <form action="">
+                <input type="text" name="" id="" placeholder="O seu melhor email :D">
+                <button> Mandar!</button>
+            </form>
+
+
+        </div>
+    </main>
+    <script>
+
+        function displayAbout() {
+            let arrow = document.getElementById('animation');
+
+            arrow.classList.toggle('rotate')
+
+            let about = document.getElementById('about')
+
+            about.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
